@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <title>BarbaJS legacy example</title>
+    </head>
+    <body>
+        <!-- define the wrapper and the container -->
+        <div data-barba="wrapper">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="sea.html">Sea</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <main class="home-main" data-barba="container" data-barba-namespace="page-a">
+                <div class="flex">
+                    <div class="bloc">
+                        <h1 class="home-title">Home</h1>
+                        <h2 class="home-subtitle">An awesome trip</h2>
+                        <p class="home-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam.</p>
+                    </div>
+                    <div class="bloc">
+                        <img class="sea-img" src="./img/sea.jpeg" alt="sea">
+                    </div>    
+                </div>
+            </main>
+
+            <footer>
+                <h6>All rights reserved.</h6>
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./app.js"></script>
+        <script>
+            $.getScript( "main.css", function( data, textStatus, jqxhr ) {
+            console.log( data ); // Data returned
+            console.log( textStatus ); // Success
+            console.log( jqxhr.status ); // 200
+            console.log( "Load was performed." );
+            });
+        </script>
+    </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">   
+        <link rel="stylesheet" href="main2.css">
+
+        <title>BarbaJS legacy example</title>
+    </head>
+    <body>
+        <!-- define the wrapper and the container -->
+        <div data-barba="wrapper">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="sea.html">Sea</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <main class="home2-main" data-barba="container" data-barba-namespace="page-a">
+                <div class="flex2">
+                    <div class="bloc2">
+                        <h1 class="home2-title">Home</h1>
+                        <h2 class="home2-subtitle">An awesome trip</h2>
+                        <p class="home2-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nam.</p>
+                    </div>
+                    <div class="bloc2">
+                        <img class="sea2-img" src="./img/sea.jpeg" alt="sea">
+                    </div>    
+                </div>
+            </main>
+
+            <footer>
+                <h6>All rights reserved.</h6>
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>

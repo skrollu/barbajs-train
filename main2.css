@@ -1,0 +1,23 @@
+/** MAIN */
+.home2-main {
+    background-color: rgb(255, 219, 121);
+    min-height: 80vh;
+    padding: 50px 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.home2-title {
+    margin: 5px;
+}
+
+.home2-subtitle {
+    margin: 15px;
+}
+
+.flex2 {
+    display: flex;
+}
+
+.sea2-img {
+    height: 300px;
+}
